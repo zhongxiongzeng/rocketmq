@@ -17,6 +17,7 @@
 
 package org.apache.rocketmq.client;
 
+import java.util.concurrent.ConcurrentMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.rocketmq.client.exception.MQClientException;
@@ -132,5 +133,4 @@ public class Validators {
                     String.format("Sending message to topic[%s] is forbidden.", topic), null);
         }
     }
-
 }
